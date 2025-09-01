@@ -1,0 +1,74 @@
+.pagina-busca {
+  padding: 30px;
+}
+
+.barra-pesquisa {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.input-pesquisa {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  width: 250px;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.botao-pesquisa {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4f6ef7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botao-pesquisa:hover {
+  background-color: #3c54c5;
+}
+
+.mensagem-status {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.mensagem-status.erro {
+  color: #f87171;
+}
+
+.subtitulo-busca {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.lista-filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .barra-pesquisa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-pesquisa {
+    width: 100%;
+  }
+
+  .lista-filmes {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}

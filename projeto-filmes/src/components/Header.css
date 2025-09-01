@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #111;
+    border-bottom: 1px solid #333;
+}
+
+.titulo {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background: none;
+    transition: color 0.3s;
+}
+
+.titulo:hover {
+    color: #4f6ef7;
+}
+
+.posicao-esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.posicao-direita {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    background-color: #4f6ef7;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #4f46e5;
+}

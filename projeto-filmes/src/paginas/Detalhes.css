@@ -1,0 +1,158 @@
+.pagina-detalhes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.poster-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 300px;
+}
+
+.imagem-detalhes {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.imagem-detalhes:hover {
+  transform: scale(1.05);
+}
+
+.detalhes-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 680px;
+  margin-right: 40px;
+}
+
+.titulo-detalhes {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.detalhes-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: left;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.);
+  max-width: 100%;
+}
+
+.elenco {
+  margin-top: 25px;
+}
+
+.elenco-lista {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.ator {
+  text-align: center;
+  width: 100px;
+}
+
+.ator img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.ator img:hover {
+  transform: scale(1.05);
+}
+
+.ator p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 968px) {
+  .pagina-detalhes {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .poster-container {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .detalhes-info {
+    margin-right: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .detalhes-info p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagina-detalhes {
+    padding: 20px 15px;
+  }
+
+  .imagem-detalhes {
+    max-width: 220px;
+  }
+
+  .detalhes-info {
+    padding: 20px;
+  }
+
+  .titulo-detalhes {
+    font-size: 1.8rem;
+  }
+
+  .detalhes-info p {
+    font-size: 1rem;
+  }
+
+  .elenco-lista {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .ator {
+    width: 90px;
+  }
+
+  .ator img {
+    width: 90px;
+    height: 135px;
+  }
+}

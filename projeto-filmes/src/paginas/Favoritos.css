@@ -1,0 +1,30 @@
+.pagina-favoritos {
+  padding: 20px;
+  color: #fff;
+}
+
+.titulo-favoritos {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lista-filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.mensagem-status {
+  text-align: center;
+  margin: 12px 0;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .lista-filmes {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}
